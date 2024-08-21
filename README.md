@@ -47,4 +47,4 @@ The site is built using:
 
 
    ```bash
-   git clone  https://github.com/Firas-AL-Ahmad/Training-Company-Website.git
+   git clone   https://github.com/FirasAL-Ahmad/Training-Company-Website.git
