@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleDescription(event) {
+            var descriptions = document.querySelectorAll('.description-list dd');
+            descriptions.forEach(function (description) {
+                description.style.display = 'none';
+            });
+            var targetDescription = event.target.nextElementSibling;
+            targetDescription.style.display = 'block';
+
+            var titles = document.querySelectorAll('.description-list dt');
+            titles.forEach(function (title) {
+                title.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="div-logo">
+            <p>Our Company</p>
+        </div>
+        <div class="options-and-get-Btn">
+            <ul class="header-options">
+                <li class="header-option">
+                    <a href="">Home</a>
+                </li>
+                <li class="header-option">
+                    <a href="">about</a>
+                </li>
+                <li class="header-option">
+                    <a href="">Services</a>
+                </li>
+                <li class="header-option">
+                    <a href="">Portfolio</a>
+                </li>
+                <li class="header-option">
+                    <a href="">Teams</a>
+                </li>
+                <li class="header-option">
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+            <div class="get-started-btn">
+                <p>Get Started</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="nav-sec">
+            <div class="title-and-supTitle">
+                <h1 id="title">
+                    Better Solutions For Your Business
+                </h1>
+                <p id="sup-title">
+                    We are team of talented designers making websites wth Bootstrap
+                </p>
+                <dir class="nav-batten">
+                    <dir class="get-start">
+                        Get Started
+                    </dir>
+                    <dir class="play-video">
+                        <i class="fa-regular fa-circle-play"></i>
+                        Watch Video
+                    </dir>
+                </dir>
+            </div>
+            <div class="hero-img">
+                <img src="./img/hero-img.png" alt="">
+            </div>
+        </section>
+        <section class="clients-name-sec">
+            <img src="./img/clients/client-1.png">
+            <img src="./img/clients/client-2.png">
+            <img src="./img/clients/client-3.png">
+            <img src="./img/clients/client-4.png">
+            <img src="./img/clients/client-5.png">
+            <img src="z./img/clients/client-6.png">
+        </section>
+        <section class="about-us-sec">
+            <strong id="aboutUs-key">
+                about us
+            </strong>
+            <div class="liner">
+                <dir class="activ-liner">
+                </dir>
+            </div>
+            <div class="about-us-content">
+                <div class="about-us-lift-content">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat similique repellendus
+                        delectus
+                        tempore ipsam culpa obcaecati iusto?
+                    </p>
+                    <div>
+                        <div class="ul-div">
+                            <div class="li-div">
+                                <img src="./assets/check-double-icon.svg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                            <div class="li-div">
+                                <img src="./assets/check-double-icon.svg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                            <div class="li-div">
+                                <img src="./assets/check-double-icon.svg">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-us-right-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minima quasi repellat vero
+                        corporis
+                        porro laboriosam officia ut odio?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic esse libero, repellendus dolore
+                        cumque
+                        laboriosam! Numquam, perferendis sed.
+                    </p>
+                    <div class="about-bttn">
+                        Learn More
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="why-us-sec">
+            <strong id="why-us-key">
+                why us
+            </strong>
+            <div class="liner">
+                <dir class="activ-liner">
+                </dir>
+            </div>
+            <div class="why-us-content">
+                <div class="why-us-lift-content">
+                    <p id="whyUs-title">
+                        Eum ipsam laborum deleniti
+                        <br>
+                        <strong id="whyUs-sup-title">
+                            velit pariatur architecto aut nihil
+                        </strong>
+                    </p>
+                    <p id="whyUs-lift-paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tenetur nobis obcaecati
+                        praesentium deleniti alias architecto dicta minus nihil at debitis voluptatum odit, quam sit
+                    </p>
+                    <div class="why-us-menu-lift-content">
+                        <dl class="description-list">
+                            <dt onclick="toggleDescription(event)">
+                                <strong id="num-menu" id="num-menu">01</strong>
+                                <strong class="title-menu">
+                                    we are professionals
+                                </strong>
+                                <i id="chevron-down1" class="fa-solid fa-chevron-down chevron-down"></i>
+
+                            </dt>
+                            <dd>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                                curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus
+                                non.
+                            </dd>
+                            <dt class="title-menu" onclick="toggleDescription(event)">
+                                <strong id="num-menu">02</strong>
+                                <strong>
+                                    we are professionals
+                                </strong>
+                                <i id="chevron-down2" class="fa-solid fa-chevron-down chevron-down"></i>
+                            </dt>
+                            <dd>
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
+                                pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
+                                turpis massa tincidunt dui.
+                            </dd>
+                            <dt onclick="toggleDescription(event)">
+                                <strong id="num-menu" id="num-menu">03</strong>
+                                <strong class="title-menu">
+                                    we are professionals
+                                </strong>
+                                <i id="chevron-down3" class="fa-solid fa-chevron-down chevron-down"></i>
+                            </dt>
+                            <dd>
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                                tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
+                                molestie at elementum eu facilisis sed odio morbi quis
+                            </dd>
+                            <dt onclick="toggleDescription(event)">
+                                <strong id="num-menu" id="num-menu">04</strong>
+                                <strong class="title-menu">
+                                    we are professionals
+                                </strong>
+                                <i id="chevron-down4" class="fa-solid fa-chevron-down chevron-down"></i>
+                            </dt>
+                            <dd>
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                                tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
+                                molestie at elementum eu facilisis sed odio morbi quis
+                            </dd>
+                            <dt onclick="toggleDescription(event)">
+                                <strong id="num-menu" id="num-menu">05</strong>
+                                <strong class="title-menu">
+                                    we are professionals
+                                </strong>
+                                <i id="chevron-down5" class="fa-solid fa-chevron-down chevron-down"></i>
+                            </dt>
+                            <dd>
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                                tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
+                                molestie at elementum eu facilisis sed odio morbi quis
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="why-us-right-content">
+                    <img id="why-us-img" src="./img/why-us.png">
+                </div>
+            </div>
+        </section>
+        <section class="skills-sec">
+            <strong id="skills-key">
+                skills
+            </strong>
+            <div class="liner">
+                <dir class="activ-liner">
+                </dir>
+            </div>
+            <div class="skills-sec-content">
+
+                <div class="skills--lift-content">
+                    <img id="skills-img" src="./img/skills.png">
+                </div>
+                <div class="skills-right-content">
+                    <strong id="skills-right-title">
+                        we have these great skills
+                    </strong>
+                    <p id="skills-right-sup-title">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt assumenda blanditiis illum,
+                        quod autem quia id fuga nam accusantium
+                    </p>
+                    <div class="skills-ditils">
+                        <div class="skils-titile">
+                            <label class="label">html</label>
+                            <label>80%</label>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="progress-moved-HTML progress-background">
+                                <div class="progress-active">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-ditils">
+                        <div class="skils-titile">
+                            <label class="label">css</label>
+                            <label>60%</label>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="progress-moved-CSS progress-background">
+                                <div class="progress-active">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-ditils">
+                        <div class="skils-titile">
+                            <label class="label">JAVASCRIPT</label>
+                            <label>45%</label>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="progress-moved-JAVASCRIPT progress-background">
+                                <div class="progress-active">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-ditils">
+                        <div class="skils-titile">
+                            <label class="label">C#</label>
+                            <label>75%</label>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="progress-moved-C-Charp progress-background">
+                                <div class="progress-active">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-ditils">
+                        <div class="skils-titile">
+                            <label class="label">batabase</label>
+                            <label>55%</label>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="progress-moved-DB progress-background">
+                                <div class="progress-active">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-sec">
+            <strong id="services-key">
+                services
+            </strong>
+            <div class="liner">
+                <dir class="activ-liner">
+                </dir>
+            </div>
+            <p id="services-sup-title">
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                sit in iste officiis commodi quidem hic quas.
+            </p>
+            <div class="services-contenar">
+                <div class="services-card">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-arrow-up-from-bracket" style="color: #74C0FC;"></i>
+                        </div>
+                        <h4 class="card-title">Lorem Ipsum</h4>
+                        <p class="card-content">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi</p>
+                    </div>
+                </div>
+                <div class="services-card">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-file" style="color: #74C0FC;"></i>
+                        </div>
+                        <h4 class="card-title">Lorem Ipsum</h4>
+                        <p class="card-content">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi</p>
+                    </div>
+                </div>
+                <div class="services-card">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-scale-unbalanced-flip" style="color: #74C0FC;"></i>
+                        </div>
+                        <h4 class="card-title">Lorem Ipsum</h4>
+                        <p class="card-content">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi</p>
+                    </div>
+                </div>
+                <div class="services-card">
+                    <div class="icon-box">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-layer-group" style="color: #74C0FC;"></i>
+                        </div>
+                        <h4 class="card-title">Lorem Ipsum</h4>
+                        <p class="card-content">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-sec">
+            <strong id="team-key">
+                team
+            </strong>
+            <div class="liner">
+                <dir class="activ-liner">
+                </dir>
+            </div>
+            <p id="team-sup-title">
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                sit in iste officiis commodi quidem hic quas.
+            </p>
+            <div class="team-contenar">
+                <div class="team-personal-card">
+                    <img id="prsonal-img" src="./img/team/team-1.jpg">
+                    <div class="team-personal-card-content">
+                        <strong id="name">
+                            Firas Al Ahmad
+                        </strong>
+                        <strong id="job">
+                            Chief Executive Officer
+                        </strong>
+                        <hr id="card-hr">
+                        <p id="description">
+                            Explicabo voluptatem mollitia et repellat qui dolorum quasi
+                        </p>
+                        <div class="card-foler">
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-personal-card">
+                    <img id="prsonal-img" src="./img/team/team-2.jpg">
+                    <div class="team-personal-card-content">
+                        <strong id="name">
+                            Sarah Jhonson
+                        </strong>
+                        <strong id="job">
+                            Product Manager
+                        </strong>
+                        <hr id="card-hr">
+                        <p id="description">
+                            Aut maiores voluptates amet et quis praesentium qui senda para
+                        </p>
+                        <div class="card-foler">
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-contenar">
+                <div class="team-personal-card">
+                    <img id="prsonal-img" src="./img/team/team-3.jpg">
+                    <div class="team-personal-card-content">
+                        <strong id="name">
+                            Karem Saad
+                        </strong>
+                        <strong id="job">
+                            CTO
+                        </strong>
+                        <hr id="card-hr">
+                        <p id="description">
+                            Quisquam facilis cum velit laborum corrupti fuga rerum quia
+                        </p>
+                        <div class="card-foler">
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-personal-card">
+                    <img id="prsonal-img" src="./img/team/team-4.jpg">
+                    <div class="team-personal-card-content">
+                        <strong id="name">
+                            Walter White
+                        </strong>
+                        <strong id="job">
+                            Accountant
+                        </strong>
+                        <hr id="card-hr">
+                        <p id="description">
+                            Dolorum tempora officiis odit laborum officiis et et accusamus
+                        </p>
+                        <div class="card-foler">
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="social-icons">
+                                <i id="icon" class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="height: 1000px;"></section>
+    </main>
+
+</body>
+
+</html>
